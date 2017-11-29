@@ -1372,9 +1372,11 @@ namespace NFe.AppTeste
 
         protected virtual ide GetIdentificacao(int numero, ModeloDocumento modelo, VersaoServico versao)
         {
+            var estado = Estado.SP;
+
             var ide = new ide
             {
-                cUF = _configuracoes.EnderecoEmitente.UF,
+                cUF = Estado.SP,
                 natOp = "VENDA",
                 mod = modelo,
                 serie = 1,
@@ -1769,8 +1771,8 @@ namespace NFe.AppTeste
                 cEANTrib = "7770000000012",
                 uTrib = "UNID",
                 qTrib = 1,
-                vUnTrib = 1.1m,
-                indTot = IndicadorTotal.ValorDoItemCompoeTotalNF,
+                vUnTrib = 1,
+                indTot = IndicadorTotal.ValorDoItemCompoeTotalNF
                 //NVE = {"AA0001", "AB0002", "AC0002"},
                 //CEST = ?
 
