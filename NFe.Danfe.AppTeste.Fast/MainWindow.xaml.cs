@@ -233,7 +233,7 @@ namespace NFe.Danfe.AppTeste
                                                                                          "NOME DA SOFTWARE HOUSE");
                 danfe.Visualizar();
                 //danfe.Imprimir();
-                //danfe.ExibirDesign();
+                danfe.ExibirDesign();
                 //danfe.ExportarPdf(@"d:\teste.pdf");
 
                 #endregion
